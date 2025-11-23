@@ -58,7 +58,7 @@ export default function HomePage() {
                     </div>
 
                     {/* Action Cards */}
-                    <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
                         {/* Customer Card */}
                         <Link href="/customer" className="group">
                             <Card className="h-full border-4 border-lime-200 hover:border-lime-400 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 bg-gradient-to-br from-white to-lime-50">
@@ -74,6 +74,26 @@ export default function HomePage() {
                                     </p>
                                     <Button className="w-full bg-gradient-to-r from-lime-500 to-lime-600 hover:from-lime-600 hover:to-lime-700 text-white text-xl py-6 rounded-xl shadow-lg">
                                         จองคิวเลย! 🎫
+                                    </Button>
+                                </CardContent>
+                            </Card>
+                        </Link>
+
+                        {/* QR Code Card */}
+                        <Link href="/qr" className="group">
+                            <Card className="h-full border-4 border-purple-200 hover:border-purple-400 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 bg-gradient-to-br from-white to-purple-50">
+                                <CardContent className="p-8 text-center">
+                                    <div className="text-7xl mb-4 group-hover:scale-110 transition-transform">
+                                        📱
+                                    </div>
+                                    <h2 className="text-3xl font-black text-purple-700 mb-3">
+                                        QR Code
+                                    </h2>
+                                    <p className="text-gray-600 mb-6 text-lg">
+                                        สำหรับลูกค้า<br />สแกนเพื่อจองคิว
+                                    </p>
+                                    <Button className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white text-xl py-6 rounded-xl shadow-lg">
+                                        ดู QR Code 📸
                                     </Button>
                                 </CardContent>
                             </Card>
